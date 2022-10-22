@@ -1,3 +1,14 @@
+## Test 3 (Fullstack/Backend)
+
+- Develop a backend system using the [NestJS](https://nestjs.com/) and [Serverless](https://serverless.com/) framework that will be deployed on [AWS Lambda](https://aws.amazon.com/lambda/) following the serverless architecture and the microservice principles of NestJS. The database used will be PostgreSQL and interactions with the DB will be through typeORM.
+- The backend should provide services that will allow the creation of a user profile on sign up that consist of `name` and `date of birth` which would authenticate with firebase authentication using the [firebase admin library](https://firebase.google.com/docs/admin/setup). Profile data should be stored on a PostgreSQL instance.
+- Create a blog service that allows the creation and management of blog articles which will be stored both on the PostgreSQL instance and on a Firestore instance.
+- If your role is for a backend developer, you can stop here for Test 3.
+- Integrate the services as part of Test 2.
+- After completing Test 2, create a new page `pages/dashboard.tsx` that integrates any rich text editor of your choice. This page should be a protected page for only admins to create/update/delete blogs by interacting with the backend service.
+- Create a admin user and provide their login details.
+- Push this project into a github repo and provide a public link.
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
@@ -29,33 +40,33 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+$ yarn run start
 
 # watch mode
-$ npm run start:dev
+$ yarn run start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn run start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ yarn run test
 
 # e2e tests
-$ npm run test:e2e
+$ yarn run test:e2e
 
 # test coverage
-$ npm run test:cov
+$ yarn run test:cov
 ```
 
 ## Support
