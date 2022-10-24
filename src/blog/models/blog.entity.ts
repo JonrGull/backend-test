@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('feed_blog')
+@Entity('blogs')
 export class FeedBlogEntity {
   @PrimaryGeneratedColumn('uuid')
   id: number;
