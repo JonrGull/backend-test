@@ -1,3 +1,22 @@
+# Install
+
+- Install all packages and start the server.
+
+      yarn install && yarn dev
+
+
+## Environmental variables
+
+- A firebase account and web app is needed to run this app.
+- Use the `example.env.local` to fill in your firebase credentials.
+- Add these variables to their corresponding values found in your firebase project settings:
+
+        POSTGRES_HOST=127.0.0.1
+        POSTGRES_PORT=5432
+        POSTGRES_USER=
+        POSTGRES_PASSWORD=
+        POSTGRES_DATABASE=blog
+
 ## Test 3 (Fullstack/Backend)
 
 - Develop a backend system using the [NestJS](https://nestjs.com/) and [Serverless](https://serverless.com/) framework that will be deployed on [AWS Lambda](https://aws.amazon.com/lambda/) following the serverless architecture and the microservice principles of NestJS. The database used will be PostgreSQL and interactions with the DB will be through typeORM.
